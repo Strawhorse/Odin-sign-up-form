@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    margin: 0px;
+    background-color: #f9fafb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style splash div for main image and title inside it - placed on left of page */
+.splash{
+    position: relative;
+    width: 40vw;
+    height: 100vh;
+}
+
+/* may need to change this in future to the class of the splasher-image to be able to use the odin image */
+.splash>img {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: whitesmoke;
+    top: 19.1%;
+    height: 200px;
+    width: 40%;
+    /* background-color: #00000060; */
+}
+
+.title>p {
+    font-size: 100px;
+    font-weight: 600;
+    font-family: 'Skranji', bold;
+}
+
+
+/* main section styling for the right */
+.main {
+    --padding: 60px;
+    align-self: top;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width:  60vw;
+    background-image: url("https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png");
+    /* background-color: #cccccc; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 550;
+}
+.big {
+    font-size: 30px;
+    font-weight:550;
+}
+
+.speil {
+    margin-left: var(--padding);
+    margin-top: 150px;
+    width: 47vw;
+    margin-bottom: 50px;
+}
+
+/* formatting for input fields, form, and fieldset structure */
+input {
+    appearance: none;
+    border: 2px solid #e4e4e6;
+    border-radius: 5px;
+    height: 35px;
+    width:  350px;
+    font-size: 20px;
+    text-indent: 10px;
+}
+form {
+    justify-self: center;
+}
+
+fieldset {
+    height: 30vh;
+    border: 0px;
+    padding-left: var(--padding);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+fieldset>p {
+    margin-bottom: 10px;
+}
+
+fieldset>* {
+    display: flex;
+    gap: 100px;
+}
+fieldset>*>* {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+input:focus{
+    outline: none !important;
+    border: 2px solid #5388b3;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    border: 2px solid #ee2828;
+}
+
+.spacer{
+    height: 10px;
+    width: 60vw;
+    background-image: linear-gradient(rgb(214, 214, 214), #ffffff)
+}
+
+button {
+    margin-top: var(--padding);
+    margin-left: var(--padding);
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0px;
+    background-color: #596D48;
+    box-shadow: 4px 4px 8px 2px whitesmoke
+}
+
+.login {
+    padding-left: var(--padding);
+}
